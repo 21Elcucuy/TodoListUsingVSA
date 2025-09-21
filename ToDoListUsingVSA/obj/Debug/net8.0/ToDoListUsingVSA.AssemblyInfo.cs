@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToDoListUsingVSA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d2b0e766c8254c9aa4c7dfb99c85070a2b76762")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+497e07acdd9e314731f9ba16e6fd26d91c3b2f7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToDoListUsingVSA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToDoListUsingVSA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

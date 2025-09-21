@@ -11,15 +11,11 @@ namespace ToDoListUsingVSA.Feature.Todos.EndPoints;
 [MapGet("/api/todos/GetTodos")]
 public static partial class GetTodos
 {
-    private static async ValueTask<Ok<List<TodoResult>>> HandleAsync(object _, AppDbContext context, CancellationToken token)
+    private static async ValueTask<Ok<IReadOnlyList<TodoResult>>> HandleAsync(object _, AppDbContext context, CancellationToken token)
     {
-        var result = await context.Todos.ToListAsync(token);
-        List<TodoResult> ItemsResult = new List<TodoResult>();
+        var result = await context.Todos.Select(t => t.ToDto()).ToListAsync(token);
         
-        foreach (var item in result)
-        {
-            ItemsResult.Add(item.ToDto());
-        }
-        return TypedResults.Ok(ItemsResult);
+        
+        return TypedResults.Ok<IReadOnlyList<TodoResult>>(result);
     }
 }
