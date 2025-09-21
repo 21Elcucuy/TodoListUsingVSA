@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VaBM1dECyek=",
+  "dgSpecHash": "bYxsP/utfAA=",
   "success": true,
   "projectFilePath": "C:\\ToDoListUsingVSA\\ToDoListUsingVSA\\ToDoListUsingVSA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eldiamante\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Eldiamante\\.nuget\\packages\\immediate.apis\\3.1.0\\immediate.apis.3.1.0.nupkg.sha512",
+    "C:\\Users\\Eldiamante\\.nuget\\packages\\immediate.handlers\\3.1.0-preview.1\\immediate.handlers.3.1.0-preview.1.nupkg.sha512",
+    "C:\\Users\\Eldiamante\\.nuget\\packages\\immediate.validations\\3.1.0\\immediate.validations.3.1.0.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.18\\microsoft.aspnetcore.openapi.8.0.18.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -26,6 +29,7 @@
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.14\\microsoft.extensions.localization.abstractions.8.0.14.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Eldiamante\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",

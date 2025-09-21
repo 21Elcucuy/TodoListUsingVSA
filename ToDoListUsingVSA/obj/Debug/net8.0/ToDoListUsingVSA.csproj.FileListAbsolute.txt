@@ -108,3 +108,8 @@ C:\ToDoListUsingVSA\ToDoListUsingVSA\obj\Debug\net8.0\refint\ToDoListUsingVSA.dl
 C:\ToDoListUsingVSA\ToDoListUsingVSA\obj\Debug\net8.0\ToDoListUsingVSA.pdb
 C:\ToDoListUsingVSA\ToDoListUsingVSA\obj\Debug\net8.0\ToDoListUsingVSA.genruntimeconfig.cache
 C:\ToDoListUsingVSA\ToDoListUsingVSA\obj\Debug\net8.0\ref\ToDoListUsingVSA.dll
+C:\ToDoListUsingVSA\ToDoListUsingVSA\bin\Debug\net8.0\Immediate.Apis.Shared.dll
+C:\ToDoListUsingVSA\ToDoListUsingVSA\bin\Debug\net8.0\Immediate.Handlers.Shared.dll
+C:\ToDoListUsingVSA\ToDoListUsingVSA\bin\Debug\net8.0\Immediate.Validations.Shared.dll
+C:\ToDoListUsingVSA\ToDoListUsingVSA\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\ToDoListUsingVSA\ToDoListUsingVSA\obj\Debug\net8.0\ToDoListUsingVSA.sourcelink.json
