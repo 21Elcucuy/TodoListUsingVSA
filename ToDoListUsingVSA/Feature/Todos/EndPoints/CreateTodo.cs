@@ -1,5 +1,6 @@
 using Immediate.Apis.Shared;
 using Immediate.Handlers.Shared;
+using Immediate.Validations.Shared;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using ToDoListUsingVSA.Data;
@@ -12,10 +13,12 @@ namespace ToDoListUsingVSA.Feature.Todos.EndPoints;
 [MapPost("api/Todos/CreateTodo")]
 public static partial class CreateTodo
 {
-    public  sealed  record Command
+    [Validate]
+    public  sealed partial record Command : IValidationTarget<Command>
     {
-        
-        public required string Title { get; set; }
+        [NotEmpty]
+        [MaxLength(60)]
+        public  string Title { get; set; }
         
     }
  

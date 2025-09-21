@@ -1,5 +1,6 @@
 using Immediate.Apis.Shared;
 using Immediate.Handlers.Shared;
+using Immediate.Validations.Shared;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using ToDoListUsingVSA.Data;
@@ -11,8 +12,10 @@ namespace ToDoListUsingVSA.Feature.Todos.EndPoints;
 [MapDelete("api/todos/deleteTodo/{todoId}")]
 public static partial class DeleteTodo
 {
-    public record Query
+    [Validate]
+    public sealed partial record Query: IValidationTarget<Query>
     {
+        [GreaterThan(0 ,Message ="The Id must be greater than 0")]
         public int todoId { get; init; }
     }
     

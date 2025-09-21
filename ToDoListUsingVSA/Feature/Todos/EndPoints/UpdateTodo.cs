@@ -1,5 +1,7 @@
+
 using Immediate.Apis.Shared;
 using Immediate.Handlers.Shared;
+using Immediate.Validations.Shared;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,16 +14,20 @@ namespace ToDoListUsingVSA.Feature.Todos.EndPoints;
 [MapPut("api/todos/update/{todoId}")]
 public static partial class UpdateTodo
 {
-    
-    public record Command
+     [Validate]   
+    public sealed partial record Command : IValidationTarget<Command>
     {
-
-        public partial record CommandBody
+       [Validate]
+        public sealed partial record CommandBody : IValidationTarget<CommandBody>
         {
+            [NotEmpty]
+            [MaxLength(60)]
             public string Title { get; set; }
+            [NotEmpty]
             public bool IsComplete { get; set; }
         }
         [FromRoute]
+        [GreaterThan(0 ,Message ="The Id must be greater than 0")]
         public int todoId { get; init; }
         [FromBody]
         public CommandBody commandBody { get; init; }

@@ -1,5 +1,6 @@
 using Immediate.Apis.Shared;
 using Immediate.Handlers.Shared;
+using Immediate.Validations.Shared;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ToDoListUsingVSA.Data;
@@ -13,9 +14,10 @@ namespace ToDoListUsingVSA.Feature.Todos.EndPoints;
 public static partial class GetTodoById 
 {
    
-    
-    public sealed record Query
+    [Validate]
+    public sealed partial record Query : IValidationTarget<Query>
     {
+        [GreaterThan(0 ,Message ="The Id must be greater than 0")]
         public required int TodoId { get; set; }
     }
 
